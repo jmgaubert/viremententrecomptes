@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kmSPAEzI5csEDRvVvzaUOZfp4J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java test" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.BordereauVirementTest">
+    <configuration name="BordereauVirementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="viremententrecomptes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bordereauvirementtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bordereauvirementtest" />
+      <option name="MAIN_CLASS_NAME" value="bordereauvirementtest.BordereauVirementTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BordereauVirementTest.bordereauDeVirement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="viremententrecomptes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bordereauvirementtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bordereauvirementtest" />
+      <option name="MAIN_CLASS_NAME" value="bordereauvirementtest.BordereauVirementTest" />
+      <option name="METHOD_NAME" value="bordereauDeVirement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BordereauVirementTest.bordereau_de_virement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="viremententrecomptes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bordereauvirementtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bordereauvirementtest" />
+      <option name="MAIN_CLASS_NAME" value="bordereauvirementtest.BordereauVirementTest" />
+      <option name="METHOD_NAME" value="bordereau_de_virement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BordereauVirementTest.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="viremententrecomptes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bordereauvirementtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="bordereauvirementtest" />
+      <option name="MAIN_CLASS_NAME" value="bordereauvirementtest.BordereauVirementTest" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BordereauVirementTest" />
+        <item itemvalue="JUnit.BordereauVirementTest.bordereauDeVirement" />
+        <item itemvalue="JUnit.BordereauVirementTest.bordereau_de_virement" />
+        <item itemvalue="JUnit.BordereauVirementTest.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="" />
+      <created>1606304248637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606304248637</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="94" key="#Project_Structure" timestamp="1606319310317">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1606319310317" />
+    <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1606321655329">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606321655329" />
+    <state x="226" y="275" key="FileChooserDialogImpl" timestamp="1606375207938">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="226" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606375207938" />
+    <state width="1877" height="152" key="GridCell.Tab.0.bottom" timestamp="1606373855322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="152" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606373855322" />
+    <state width="1877" height="152" key="GridCell.Tab.0.center" timestamp="1606373855322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="152" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606373855322" />
+    <state width="1877" height="152" key="GridCell.Tab.0.left" timestamp="1606373855322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="152" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606373855322" />
+    <state width="1877" height="152" key="GridCell.Tab.0.right" timestamp="1606373855322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="152" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606373855322" />
+    <state x="342" y="181" key="new project wizard" timestamp="1606374619240">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="342" y="181" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1606374619240" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606373968071">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606373968071" />
+  </component>
+</project>
