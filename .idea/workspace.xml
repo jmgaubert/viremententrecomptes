@@ -22,23 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="creation tests sur API acces données bouchonnées">
-      <change afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/InformationLieeCompte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compte/compte/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/compte/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compte/mouvement/Mouvement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/mouvement/Mouvement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compte/solde/Solde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/solde/Solde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compte/titulaire/Titulaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/titulaire/Titulaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/bordereauvirementtest/BordereauVirementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bordereauvirementtest/BordereauVirementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compte/compte/Compte.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compte/mouvement/Mouvement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compte/solde/Solde.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compte/titulaire/Titulaire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/bordereauvirementtest/BordereauVirementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bordereauvirementtest/BordereauVirementTest.class" afterDir="false" />
+    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="changement classe compte par classe InformationLieeCompte">
+      <change afterPath="$PROJECT_DIR$/src/listetitulaires.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606562868595</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="changement classe compte par classe InformationLieeCompte">
+      <created>1606570056188</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606570056188</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +227,8 @@
     <MESSAGE value="creation API bouchonnee recuperation titulaire" />
     <MESSAGE value="creation API bouchonnee recuperation solde" />
     <MESSAGE value="creation tests sur API acces données bouchonnées" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation tests sur API acces données bouchonnées" />
+    <MESSAGE value="changement classe compte par classe InformationLieeCompte" />
+    <option name="LAST_COMMIT_MESSAGE" value="changement classe compte par classe InformationLieeCompte" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="94" key="#Project_Structure" timestamp="1606319310317">
@@ -270,10 +263,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="136" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606570007363" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606562881879">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606570065910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606562881879" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606570065910" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606485904747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

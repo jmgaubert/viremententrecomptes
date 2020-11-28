@@ -1,0 +1,2 @@
+cptref00001;Antoine Dupond;Antoine.Dupond@gmail.com
+cptref00002;Valérie Labelle;Valérie.Labelle@gmail.com
