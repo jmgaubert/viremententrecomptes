@@ -45,8 +45,10 @@ public class BordereauVirement {
 
     public void executerBordereauVirement() {
 
-        Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaire("cptref00001");
-        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaire("cptref00002");
+//        Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00001");
+//        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00002");
+        Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00001");
+        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00002");
 
         Solde soldeCompteEmetteur = ApiAccesDonnees.recupererSolde("cptref00001");
         Solde soldeCompteRecepteur = ApiAccesDonnees.recupererSolde("cptref00002");

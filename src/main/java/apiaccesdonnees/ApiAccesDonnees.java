@@ -13,7 +13,7 @@ public class ApiAccesDonnees {
     //classe ne possédant pas d'attributs
     //classe ne contenant que des méthodes static de type "utilitaires API" --> appelable sans instanciation de la classe
 
-    public static Titulaire recupererTitulaire(String referenceCompte) {
+    public static Titulaire recupererTitulaireBouchonne(String referenceCompte) {
 
         String adresseMail;
         String nom;
@@ -65,14 +65,13 @@ public class ApiAccesDonnees {
 //        else{
 //            System.out.println("fichier n'existe pas");
 //        }
-
         try {
             bufferedReader = Files.newBufferedReader(fichier);
             String ligne = null;
             while ((ligne = bufferedReader.readLine()) != null) {
                 System.out.println(ligne);
                 String[] result = ligne.split(";");
-                for (int i = 0; i< result.length;i++){
+                for (int i = 0; i < result.length; i++) {
                     System.out.println(result[i]);
                 }
             }
@@ -86,6 +85,48 @@ public class ApiAccesDonnees {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+
+    }
+
+    public static Titulaire recupererTitulaireAPartirFichier(String referenceCompte) {
+
+        String adresseMail;
+        String nom;
+        boolean titulaireNonTrouve = true;
+        String[] result = null;
+
+        Path fichier = Paths.get("src/listetitulaires.txt");
+        BufferedReader bufferedReader = null;
+
+        try {
+            bufferedReader = Files.newBufferedReader(fichier);
+            String ligne = null;
+            while (((ligne = bufferedReader.readLine()) != null) && titulaireNonTrouve) {
+//                System.out.println(ligne);
+                result = ligne.split(";");
+//                System.out.println("cle fichier titulaire : " + result[0]+" reference cherchee : "+ referenceCompte);
+                if (result[0].equals(referenceCompte)) {
+//                    System.out.println(referenceCompte + " trouve");
+                    titulaireNonTrouve = false;
+                }
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            try {
+                if (bufferedReader != null) {
+                    bufferedReader.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        if (titulaireNonTrouve) {
+            return new Titulaire("absence titulaire", referenceCompte, "absence titulaire");
+        } else {
+            return new Titulaire(result[1], referenceCompte, result[2]);
         }
 
     }

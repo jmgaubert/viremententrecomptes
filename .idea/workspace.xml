@@ -22,10 +22,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="ajout fichier liste titulaire">
+    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="integration lecture fichier .txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.ApiAccesDonneesTest.lire_fichier_titulaire">
+  <component name="RunManager" selected="JUnit.BordereauVirementTest">
     <configuration name="ApiAccesDonneesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="viremententrecomptes" />
       <extension name="coverage">
@@ -94,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiAccesDonneesTest.recupere_solde_associe_au_compte" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiAccesDonneesTest.recuperer_informations_titulaire_dans_un_fichier_texte" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="viremententrecomptes" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +106,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="apiaccesdonnees" />
       <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.ApiAccesDonneesTest" />
-      <option name="METHOD_NAME" value="recupere_solde_associe_au_compte" />
+      <option name="METHOD_NAME" value="recuperer_informations_titulaire_dans_un_fichier_texte" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiAccesDonneesTest.lire_fichier_titulaire" />
-        <item itemvalue="JUnit.ApiAccesDonneesTest" />
         <item itemvalue="JUnit.BordereauVirementTest" />
+        <item itemvalue="JUnit.ApiAccesDonneesTest" />
         <item itemvalue="JUnit.BordereauVirementTest.bordereauDeVirement" />
-        <item itemvalue="JUnit.ApiAccesDonneesTest.recupere_solde_associe_au_compte" />
+        <item itemvalue="JUnit.ApiAccesDonneesTest.recuperer_informations_titulaire_dans_un_fichier_texte" />
+        <item itemvalue="JUnit.ApiAccesDonneesTest.lire_fichier_titulaire" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606570408558</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="integration lecture fichier .txt">
+      <created>1606580065084</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606580065084</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +247,8 @@
     <MESSAGE value="creation tests sur API acces données bouchonnées" />
     <MESSAGE value="changement classe compte par classe InformationLieeCompte" />
     <MESSAGE value="ajout fichier liste titulaire" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout fichier liste titulaire" />
+    <MESSAGE value="integration lecture fichier .txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration lecture fichier .txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="94" key="#Project_Structure" timestamp="1606319310317">
@@ -249,6 +259,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606561842686" />
+    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606581912256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1606581912256" />
     <state x="226" y="275" key="FileChooserDialogImpl" timestamp="1606494224662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -257,26 +271,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606486005122" />
-    <state width="1055" height="21" key="GridCell.Tab.0.bottom" timestamp="1606580009564">
+    <state width="1877" height="96" key="GridCell.Tab.0.bottom" timestamp="1606583399240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1055" height="21" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606580009564" />
-    <state width="1055" height="21" key="GridCell.Tab.0.center" timestamp="1606580009564">
+    <state width="1877" height="96" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
+    <state width="1877" height="96" key="GridCell.Tab.0.center" timestamp="1606583399240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1055" height="21" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606580009564" />
-    <state width="1055" height="21" key="GridCell.Tab.0.left" timestamp="1606580009564">
+    <state width="1877" height="96" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
+    <state width="1877" height="96" key="GridCell.Tab.0.left" timestamp="1606583399240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1055" height="21" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606580009564" />
-    <state width="1055" height="21" key="GridCell.Tab.0.right" timestamp="1606580009564">
+    <state width="1877" height="96" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
+    <state width="1877" height="96" key="GridCell.Tab.0.right" timestamp="1606583399240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1055" height="21" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606580009564" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606570416067">
+    <state width="1877" height="96" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606580072733">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606570416067" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606580072733" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606485904747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

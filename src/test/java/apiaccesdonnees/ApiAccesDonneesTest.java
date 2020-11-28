@@ -36,13 +36,13 @@ public class ApiAccesDonneesTest {
     //ordonner les soldes
 
     @Test
-    @DisplayName("récupération Titulaire associé au Compte")
+    @DisplayName("récupération Titulaire associé au Compte version bouchonnee")
     @Order(1)
-    public void recupere_titulaire_associe_au_compte() {
+    public void recupere_titulaire_associe_au_compte_version_bouchonnee() {
 
-        Titulaire titulaire1 = ApiAccesDonnees.recupererTitulaire("cptref00001");
-        Titulaire titulaire2 = ApiAccesDonnees.recupererTitulaire("cptref00002");
-        Titulaire titulaire3 = ApiAccesDonnees.recupererTitulaire("reference inconnue");
+        Titulaire titulaire1 = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00001");
+        Titulaire titulaire2 = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00002");
+        Titulaire titulaire3 = ApiAccesDonnees.recupererTitulaireBouchonne("reference inconnue");
 
         assertThat(titulaire1.getTitulaire()).isEqualTo("Antoine Dupond");
         assertThat(titulaire1.getAdresseMail()).isEqualTo("Antoine.Dupond@gmail.com");
@@ -88,5 +88,26 @@ public class ApiAccesDonneesTest {
         ApiAccesDonnees.lireFichierSequentiel();
     }
 
+    @Test
+    @DisplayName("récupérer informations titulaire dans un fichier texte")
+    @Order(4)
+    public void recuperer_informations_titulaire_dans_un_fichier_texte() {
+
+        Titulaire titulaire1 = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00001");
+        Titulaire titulaire2 = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00002");
+        Titulaire titulaire3 = ApiAccesDonnees.recupererTitulaireAPartirFichier("reference inconnue");
+
+        assertThat(titulaire1.getTitulaire()).isEqualTo("Antoine Dupond");
+        assertThat(titulaire1.getAdresseMail()).isEqualTo("Antoine.Dupond@gmail.com");
+        assertThat(titulaire2.getTitulaire()).isEqualTo("Valérie Labelle");
+        assertThat(titulaire2.getAdresseMail()).isEqualTo("Valérie.Labelle@gmail.com");
+        assertThat(titulaire3.getTitulaire()).isEqualTo("absence titulaire");
+        assertThat(titulaire3.getAdresseMail()).isEqualTo("absence titulaire");
+
+        titulaire1.afficherInformations();
+        titulaire2.afficherInformations();
+        titulaire3.afficherInformations();
+
+    }
 
 }
