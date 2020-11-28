@@ -1,5 +1,6 @@
 package bordereauvirement;
 
+import apiaccesdonnees.ApiAccesDonnees;
 import compte.mouvement.Mouvement;
 import compte.solde.Solde;
 import compte.titulaire.Titulaire;
@@ -45,18 +46,27 @@ public class BordereauVirement {
     public void executerBordereauVirement() {
         System.out.println("executer bordereau virement");
 
-        //recherche titulaire du compte emetteur
-        String nomTitulaireCompteEmetteur = "Antoine Dupond";
-        String adresseMailTitulaireCompteEmetteur = "Antoine.Dupond@gmail.com";
-        Titulaire titulaireCompteEmetteur = new Titulaire(nomTitulaireCompteEmetteur,
-                referenceCompteEmetteur,adresseMailTitulaireCompteEmetteur);
+////        //recherche titulaire du compte emetteur
+//        String nomTitulaireCompteEmetteur = "Antoine Dupond";
+//        String adresseMailTitulaireCompteEmetteur = "Antoine.Dupond@gmail.com";
+//        Titulaire titulaireCompteEmetteur = new Titulaire(nomTitulaireCompteEmetteur,
+//                referenceCompteEmetteur,adresseMailTitulaireCompteEmetteur);
+//        titulaireCompteEmetteur.afficherInformations();
+//        //recherche titulaire du compte recepteur
+//        String nomTitulaireCompteRecepteur = "Valérie Labelle";
+//        String adresseMailTitulaireCompteRecepteur = "Valérie.Labelle@gmail.com";
+//        Titulaire titulaireCompteRecepteur = new Titulaire(nomTitulaireCompteRecepteur,
+//                referenceCompteRecepteur,adresseMailTitulaireCompteRecepteur);
+//        titulaireCompteRecepteur.afficherInformations();
+
+        Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaire("cptref00001");
+        System.out.println(titulaireCompteEmetteur);
         titulaireCompteEmetteur.afficherInformations();
-        //recherche titulaire du compte recepteur
-        String nomTitulaireCompteRecepteur = "Valérie Labelle";
-        String adresseMailTitulaireCompteRecepteur = "Valérie.Labelle@gmail.com";
-        Titulaire titulaireCompteRecepteur = new Titulaire(nomTitulaireCompteRecepteur,
-                referenceCompteRecepteur,adresseMailTitulaireCompteRecepteur);
+
+        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaire("cptref00002");
+        System.out.println(titulaireCompteRecepteur);
         titulaireCompteRecepteur.afficherInformations();
+
 
         System.out.println("soldes avant virement");
         //verification/récuperation du solde associé au compte emetteur

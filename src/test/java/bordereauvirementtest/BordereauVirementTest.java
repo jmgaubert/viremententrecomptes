@@ -38,6 +38,7 @@ public class BordereauVirementTest {
     @Test
     @DisplayName("test sur traitement bordereau virement")
     public void bordereauDeVirement() {
+
         String referenceVirementRecu = "virement 0001";
         String referenceCompteEmetteurRecu = "cptref00001";
         String referenceCompteRecepteurRecu = "cptref00002";
@@ -54,6 +55,15 @@ public class BordereauVirementTest {
                 montantRecu,
                 libelleRecu,
                 informationBeneficiaireRecu);
+
+
+//        //recherche titulaire du compte emetteur
+//        String nomTitulaireCompteEmetteur = "Antoine Dupond";
+//        String adresseMailTitulaireCompteEmetteur = "Antoine.Dupond@gmail.com";
+//        Titulaire titulaireCompteEmetteur = new Titulaire(nomTitulaireCompteEmetteur,
+//                referenceCompteEmetteurRecu,adresseMailTitulaireCompteEmetteur);
+//        titulaireCompteEmetteur.afficherInformations();
+
 
         bordereauVirement.afficherInformations();
         bordereauVirement.executerBordereauVirement();
