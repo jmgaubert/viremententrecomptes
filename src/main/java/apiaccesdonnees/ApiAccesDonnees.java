@@ -14,7 +14,7 @@ public class ApiAccesDonnees {
 
         switch(referenceCompte)
         {
-            //bouchonnage donc ...... pas cible du tout
+            //bouchonnage donc ...... pas cible du tout... implementer le bouchon à partir d'un fichier texte
             case "cptref00001":
                 nom = "Antoine Dupond";
                 adresseMail = "Antoine.Dupond@gmail.com";
@@ -24,8 +24,8 @@ public class ApiAccesDonnees {
                 adresseMail = "Valérie.Labelle@gmail.com";
                 break;
             default:
-                nom = "absence nom";
-                adresseMail = "absence adresse";
+                nom = "absence titulaire";
+                adresseMail = "absence titulaire";
         }
         //definir gestion de titulaire non trouve
         return new Titulaire(nom,referenceCompte,adresseMail);
@@ -47,7 +47,7 @@ public class ApiAccesDonnees {
             default:
                 montantSolde = 0;
         }
-        //definir gestion de solde non trouve
+        //definir gestion de solde non trouve  implementer le bouchon à partir d'un fichier texte
         return new Solde(referenceCompte,montantSolde);
     }
 }

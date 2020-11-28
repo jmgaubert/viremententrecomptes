@@ -13,6 +13,10 @@ public class Solde extends Compte {
         this.solde = solde;
     }
 
+    public double getSolde() {
+        return solde;
+    }
+
     public void afficherInformations() {
         System.out.println("Compte : " + reference + " Solde : " + solde);
     }
