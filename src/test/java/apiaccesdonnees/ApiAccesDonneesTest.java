@@ -80,5 +80,13 @@ public class ApiAccesDonneesTest {
 //        System.out.println(solde3);
 //        solde3.afficherInformations();
     }
+    @Test
+    @DisplayName("lecture fichier titulaire")
+    @Order(3)
+    public void lire_fichier_titulaire() {
+
+        ApiAccesDonnees.lireFichierSequentiel();
+    }
+
 
 }
