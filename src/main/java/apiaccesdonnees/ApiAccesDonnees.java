@@ -1,5 +1,6 @@
 package apiaccesdonnees;
 
+import compte.solde.Solde;
 import compte.titulaire.Titulaire;
 
 public class ApiAccesDonnees {
@@ -26,6 +27,27 @@ public class ApiAccesDonnees {
                 nom = "absence nom";
                 adresseMail = "absence adresse";
         }
+        //definir gestion de titulaire non trouve
         return new Titulaire(nom,referenceCompte,adresseMail);
+    }
+
+    public static Solde recupererSolde(String referenceCompte){
+
+        double montantSolde;
+
+        switch(referenceCompte)
+        {
+            //bouchonnage donc ...... pas cible du tout
+            case "cptref00001":
+                montantSolde = (double) 3790.14;
+                break;
+            case "cptref00002":
+                montantSolde = (double) -145.32;
+                break;
+            default:
+                montantSolde = 0;
+        }
+        //definir gestion de solde non trouve
+        return new Solde(referenceCompte,montantSolde);
     }
 }

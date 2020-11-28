@@ -46,38 +46,19 @@ public class BordereauVirement {
     public void executerBordereauVirement() {
         System.out.println("executer bordereau virement");
 
-////        //recherche titulaire du compte emetteur
-//        String nomTitulaireCompteEmetteur = "Antoine Dupond";
-//        String adresseMailTitulaireCompteEmetteur = "Antoine.Dupond@gmail.com";
-//        Titulaire titulaireCompteEmetteur = new Titulaire(nomTitulaireCompteEmetteur,
-//                referenceCompteEmetteur,adresseMailTitulaireCompteEmetteur);
-//        titulaireCompteEmetteur.afficherInformations();
-//        //recherche titulaire du compte recepteur
-//        String nomTitulaireCompteRecepteur = "Valérie Labelle";
-//        String adresseMailTitulaireCompteRecepteur = "Valérie.Labelle@gmail.com";
-//        Titulaire titulaireCompteRecepteur = new Titulaire(nomTitulaireCompteRecepteur,
-//                referenceCompteRecepteur,adresseMailTitulaireCompteRecepteur);
-//        titulaireCompteRecepteur.afficherInformations();
-
         Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaire("cptref00001");
+        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaire("cptref00002");
+
+        Solde soldeCompteEmetteur = ApiAccesDonnees.recupererSolde("cptref00001");
+        Solde soldeCompteRecepteur = ApiAccesDonnees.recupererSolde("cptref00002");
+
         System.out.println(titulaireCompteEmetteur);
         titulaireCompteEmetteur.afficherInformations();
-
-        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaire("cptref00002");
         System.out.println(titulaireCompteRecepteur);
         titulaireCompteRecepteur.afficherInformations();
-
-
-        System.out.println("soldes avant virement");
-        //verification/récuperation du solde associé au compte emetteur
-        //on suppose que solde du compte emetteur est à 3790.14
-        double montantSoldeEmetteur = (double) 3790.14;
-        Solde soldeCompteEmetteur = new Solde(referenceCompteEmetteur, montantSoldeEmetteur);
+        System.out.println(soldeCompteEmetteur);
         soldeCompteEmetteur.afficherInformations();
-        //verification/récuperation du solde associé au compte recepteur
-        //on suppose que solde du compte recepteur est à -145.32
-        double montantSoldeRecepteur = (double) -145.32;
-        Solde soldeCompteRecepteur = new Solde(referenceCompteRecepteur, montantSoldeRecepteur);
+        System.out.println(soldeCompteRecepteur);
         soldeCompteRecepteur.afficherInformations();
 
         Mouvement mouvementVirementEmetteur = new Mouvement(referenceCompteEmetteur,
@@ -111,5 +92,34 @@ public class BordereauVirement {
 
 
     }
+    ////        //recherche titulaire du compte emetteur
+//        String nomTitulaireCompteEmetteur = "Antoine Dupond";
+//        String adresseMailTitulaireCompteEmetteur = "Antoine.Dupond@gmail.com";
+//        Titulaire titulaireCompteEmetteur = new Titulaire(nomTitulaireCompteEmetteur,
+//                referenceCompteEmetteur,adresseMailTitulaireCompteEmetteur);
+//        titulaireCompteEmetteur.afficherInformations();
+//        //recherche titulaire du compte recepteur
+//        String nomTitulaireCompteRecepteur = "Valérie Labelle";
+//        String adresseMailTitulaireCompteRecepteur = "Valérie.Labelle@gmail.com";
+//        Titulaire titulaireCompteRecepteur = new Titulaire(nomTitulaireCompteRecepteur,
+//                referenceCompteRecepteur,adresseMailTitulaireCompteRecepteur);
+//        titulaireCompteRecepteur.afficherInformations();
+///////
+//        System.out.println("soldes avant virement");
+//        //verification/récuperation du solde associé au compte emetteur
+//        //on suppose que solde du compte emetteur est à 3790.14
+//        double montantSoldeEmetteur = (double) 3790.14;
+//        Solde soldeCompteEmetteur = new Solde(referenceCompteEmetteur, montantSoldeEmetteur);
+//        soldeCompteEmetteur.afficherInformations();
+//        //verification/récuperation du solde associé au compte recepteur
+//        //on suppose que solde du compte recepteur est à -145.32
+//        double montantSoldeRecepteur = (double) -145.32;
+//        Solde soldeCompteRecepteur = new Solde(referenceCompteRecepteur, montantSoldeRecepteur);
+//        soldeCompteRecepteur.afficherInformations();
+
+
+
+
+
 }
 
