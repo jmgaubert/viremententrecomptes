@@ -1,10 +1,10 @@
-package compte.mouvement;
+package informationlieecompte.mouvement;
 
-import compte.compte.Compte;
+import informationlieecompte.InformationLieeCompte;
 
 import java.time.LocalDate;
 
-public class Mouvement extends Compte {
+public class Mouvement extends InformationLieeCompte {
 
     String referenceMouvement;
     double montant;

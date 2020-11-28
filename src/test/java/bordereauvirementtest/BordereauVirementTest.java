@@ -1,9 +1,6 @@
 package bordereauvirementtest;
 
 import bordereauvirement.BordereauVirement;
-import compte.mouvement.Mouvement;
-import compte.solde.Solde;
-import compte.titulaire.Titulaire;
 import org.junit.jupiter.api.*;
 
 import java.time.LocalDate;
@@ -13,12 +10,12 @@ public class BordereauVirementTest {
 
     @BeforeAll
     static void beforeALL(){
-        System.out.println("début session test");
+        System.out.println("début session test sur bordereau virement");
     }
 
     @AfterAll
     static void afterALL(){
-        System.out.println("fin session test");
+        System.out.println("fin session test sur bordereau virement");
     }
 
     long timeAtStart;
@@ -34,7 +31,6 @@ public class BordereauVirementTest {
         System.out.println("ce test a pris "+(timeAtEnd-timeAtStart));
     }
 
-
     @Test
     @DisplayName("test sur traitement bordereau virement")
     public void bordereauDeVirement() {
@@ -43,7 +39,7 @@ public class BordereauVirementTest {
         String referenceCompteEmetteurRecu = "cptref00001";
         String referenceCompteRecepteurRecu = "cptref00002";
         LocalDate dateVirementRecu = LocalDate.of(2020,11,20);
-        double montantRecu = (double) 1550.53;
+        double montantRecu = 1550.53;
         String libelleRecu = "virement pour anniversaire";
         boolean informationBeneficiaireRecu = true;
 

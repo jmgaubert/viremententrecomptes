@@ -1,8 +1,9 @@
-package compte.titulaire;
+package informationlieecompte.titulaire;
 
-import compte.compte.Compte;
+import informationlieecompte.InformationLieeCompte;
+import informationlieecompte.compte.Compte;
 
-public class Titulaire extends Compte {
+public class Titulaire extends InformationLieeCompte {
     String titulaire;
     String adresseMail;
 
@@ -13,10 +14,12 @@ public class Titulaire extends Compte {
     }
 
     public String getTitulaire() {
+
         return titulaire;
     }
 
     public String getAdresseMail() {
+
         return adresseMail;
     }
 

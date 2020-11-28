@@ -1,7 +1,7 @@
 package apiaccesdonnees;
 
-import compte.solde.Solde;
-import compte.titulaire.Titulaire;
+import informationlieecompte.solde.Solde;
+import informationlieecompte.titulaire.Titulaire;
 import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;

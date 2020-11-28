@@ -22,12 +22,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="creation API bouchonnee recuperation solde">
+    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="creation tests sur API acces données bouchonnées">
+      <change afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/InformationLieeCompte.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/compte/solde/Solde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/compte/solde/Solde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compte/compte/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/compte/Compte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compte/mouvement/Mouvement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/mouvement/Mouvement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compte/solde/Solde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/solde/Solde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/compte/titulaire/Titulaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/informationlieecompte/titulaire/Titulaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/compte/solde/Solde.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/compte/solde/Solde.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/bordereauvirementtest/BordereauVirementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/bordereauvirementtest/BordereauVirementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compte/compte/Compte.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compte/mouvement/Mouvement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compte/solde/Solde.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/compte/titulaire/Titulaire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/bordereauvirementtest/BordereauVirementTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/bordereauvirementtest/BordereauVirementTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ApiAccesDonneesTest" />
+        <item itemvalue="JUnit.BordereauVirementTest" />
+        <item itemvalue="JUnit.BordereauVirementTest.bordereauDeVirement" />
         <item itemvalue="JUnit.ApiAccesDonneesTest.recupere_solde_associe_au_compte" />
         <item itemvalue="JUnit.ApiAccesDonneesTest.recupere_titulaire_associe_au_compte" />
-        <item itemvalue="JUnit.BordereauVirementTest.bordereauDeVirement" />
-        <item itemvalue="JUnit.BordereauVirementTest" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606551657649</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="creation tests sur API acces données bouchonnées">
+      <created>1606562868595</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606562868595</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,7 +234,8 @@
     <MESSAGE value="commit initial" />
     <MESSAGE value="creation API bouchonnee recuperation titulaire" />
     <MESSAGE value="creation API bouchonnee recuperation solde" />
-    <option name="LAST_COMMIT_MESSAGE" value="creation API bouchonnee recuperation solde" />
+    <MESSAGE value="creation tests sur API acces données bouchonnées" />
+    <option name="LAST_COMMIT_MESSAGE" value="creation tests sur API acces données bouchonnées" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="94" key="#Project_Structure" timestamp="1606319310317">
@@ -235,26 +254,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606486005122" />
-    <state width="1877" height="160" key="GridCell.Tab.0.bottom" timestamp="1606562789094">
+    <state width="1877" height="136" key="GridCell.Tab.0.bottom" timestamp="1606570007363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="160" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606562789094" />
-    <state width="1877" height="160" key="GridCell.Tab.0.center" timestamp="1606562789094">
+    <state width="1877" height="136" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606570007363" />
+    <state width="1877" height="136" key="GridCell.Tab.0.center" timestamp="1606570007363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="160" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606562789094" />
-    <state width="1877" height="160" key="GridCell.Tab.0.left" timestamp="1606562789094">
+    <state width="1877" height="136" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606570007363" />
+    <state width="1877" height="136" key="GridCell.Tab.0.left" timestamp="1606570007363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="160" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606562789094" />
-    <state width="1877" height="160" key="GridCell.Tab.0.right" timestamp="1606562789094">
+    <state width="1877" height="136" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606570007363" />
+    <state width="1877" height="136" key="GridCell.Tab.0.right" timestamp="1606570007363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="160" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606562789094" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606551663850">
+    <state width="1877" height="136" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606570007363" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606562881879">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606551663850" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606562881879" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606485904747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

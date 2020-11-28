@@ -1,9 +1,9 @@
 package bordereauvirement;
 
 import apiaccesdonnees.ApiAccesDonnees;
-import compte.mouvement.Mouvement;
-import compte.solde.Solde;
-import compte.titulaire.Titulaire;
+import informationlieecompte.mouvement.Mouvement;
+import informationlieecompte.solde.Solde;
+import informationlieecompte.titulaire.Titulaire;
 
 import java.time.LocalDate;
 
@@ -44,7 +44,6 @@ public class BordereauVirement {
     }
 
     public void executerBordereauVirement() {
-        System.out.println("executer bordereau virement");
 
         Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaire("cptref00001");
         Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaire("cptref00002");
@@ -52,74 +51,52 @@ public class BordereauVirement {
         Solde soldeCompteEmetteur = ApiAccesDonnees.recupererSolde("cptref00001");
         Solde soldeCompteRecepteur = ApiAccesDonnees.recupererSolde("cptref00002");
 
-        System.out.println(titulaireCompteEmetteur);
-        titulaireCompteEmetteur.afficherInformations();
-        System.out.println(titulaireCompteRecepteur);
-        titulaireCompteRecepteur.afficherInformations();
-        System.out.println(soldeCompteEmetteur);
-        soldeCompteEmetteur.afficherInformations();
-        System.out.println(soldeCompteRecepteur);
-        soldeCompteRecepteur.afficherInformations();
-
         Mouvement mouvementVirementEmetteur = new Mouvement(referenceCompteEmetteur,
                 dateVirement,
                 dateVirement.minusDays(1),
                 (double) montant * -1,
-                libelle+ " à destination de "+titulaireCompteRecepteur.getTitulaire());
-        mouvementVirementEmetteur.afficherInformations();
+                libelle + " à destination de " + titulaireCompteRecepteur.getTitulaire());
 
         Mouvement mouvementVirementRecepteur = new Mouvement(referenceCompteRecepteur,
                 dateVirement,
                 dateVirement.plusDays(1),
                 montant,
-                libelle+" de la part de "+titulaireCompteEmetteur.getTitulaire());
-        mouvementVirementRecepteur.afficherInformations();
+                libelle + " de la part de " + titulaireCompteEmetteur.getTitulaire());
 
-        System.out.println("soldes après virement");
-        soldeCompteEmetteur.ajouterASolde(mouvementVirementEmetteur);
+        //print
+        System.out.println("executer bordereau virement");
+//        System.out.println(titulaireCompteEmetteur);
+        titulaireCompteEmetteur.afficherInformations();
+//        System.out.println(titulaireCompteRecepteur);
+        titulaireCompteRecepteur.afficherInformations();
+//        System.out.println(soldeCompteEmetteur);
         soldeCompteEmetteur.afficherInformations();
-        soldeCompteRecepteur.ajouterASolde(mouvementVirementRecepteur);
+//        System.out.println(soldeCompteRecepteur);
         soldeCompteRecepteur.afficherInformations();
+        mouvementVirementEmetteur.afficherInformations();
+        mouvementVirementRecepteur.afficherInformations();
+        //print
 
-        informerBeneficiaire(titulaireCompteRecepteur,mouvementVirementRecepteur);
+        soldeCompteEmetteur.ajouterASolde(mouvementVirementEmetteur);
+        soldeCompteRecepteur.ajouterASolde(mouvementVirementRecepteur);
+
+        //print
+        System.out.println("soldes après virement");
+        soldeCompteEmetteur.afficherInformations();
+        soldeCompteRecepteur.afficherInformations();
+        //print
+
+        informerBeneficiaire(titulaireCompteRecepteur, mouvementVirementRecepteur);
 
     }
 
-    public void informerBeneficiaire(Titulaire titulaireCompteRecepteur, Mouvement mouvementVirementRecepteur){
+    public void informerBeneficiaire(Titulaire titulaireCompteRecepteur, Mouvement mouvementVirementRecepteur) {
 
-        System.out.println(titulaireCompteRecepteur.getAdresseMail()+" vous avez reçu un virement de :"
-                +mouvementVirementRecepteur.getMontant()+" "+mouvementVirementRecepteur.getLibelle());
+        System.out.println(titulaireCompteRecepteur.getAdresseMail() + " vous avez reçu un virement de :"
+                + mouvementVirementRecepteur.getMontant() + " " + mouvementVirementRecepteur.getLibelle());
 
 
     }
-    ////        //recherche titulaire du compte emetteur
-//        String nomTitulaireCompteEmetteur = "Antoine Dupond";
-//        String adresseMailTitulaireCompteEmetteur = "Antoine.Dupond@gmail.com";
-//        Titulaire titulaireCompteEmetteur = new Titulaire(nomTitulaireCompteEmetteur,
-//                referenceCompteEmetteur,adresseMailTitulaireCompteEmetteur);
-//        titulaireCompteEmetteur.afficherInformations();
-//        //recherche titulaire du compte recepteur
-//        String nomTitulaireCompteRecepteur = "Valérie Labelle";
-//        String adresseMailTitulaireCompteRecepteur = "Valérie.Labelle@gmail.com";
-//        Titulaire titulaireCompteRecepteur = new Titulaire(nomTitulaireCompteRecepteur,
-//                referenceCompteRecepteur,adresseMailTitulaireCompteRecepteur);
-//        titulaireCompteRecepteur.afficherInformations();
-///////
-//        System.out.println("soldes avant virement");
-//        //verification/récuperation du solde associé au compte emetteur
-//        //on suppose que solde du compte emetteur est à 3790.14
-//        double montantSoldeEmetteur = (double) 3790.14;
-//        Solde soldeCompteEmetteur = new Solde(referenceCompteEmetteur, montantSoldeEmetteur);
-//        soldeCompteEmetteur.afficherInformations();
-//        //verification/récuperation du solde associé au compte recepteur
-//        //on suppose que solde du compte recepteur est à -145.32
-//        double montantSoldeRecepteur = (double) -145.32;
-//        Solde soldeCompteRecepteur = new Solde(referenceCompteRecepteur, montantSoldeRecepteur);
-//        soldeCompteRecepteur.afficherInformations();
-
-
-
-
 
 }
 
