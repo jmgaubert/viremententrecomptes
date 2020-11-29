@@ -1,7 +1,15 @@
 package apiaccesdonnees.solde;
 
+import apiaccesdonnees.titulaire.ApiAccesDonneesTitulaire;
 import informationlieecompte.solde.Solde;
+import informationlieecompte.titulaire.Titulaire;
 import org.junit.jupiter.api.*;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -50,5 +58,34 @@ public class ApiAccesDonneesSoldeTest {
 //        System.out.println(solde3);
 //        solde3.afficherInformations();
     }
+
+    @Test
+    @DisplayName("lecture fichier solde")
+    @Order(2)
+    public void lire_fichier_solde() {
+
+        ApiAccesDonneesSolde.lireFichierSequentielSolde();
+    }
+
+    @Test
+    @DisplayName("récupérer informations solde dans un fichier texte")
+    @Order(3)
+    public void recuperer_informations_solde_dans_un_fichier_texte() {
+
+        Solde solde1 = ApiAccesDonneesSolde.recupererSoldeAPartirFichier("cptref00001");
+        Solde solde2 = ApiAccesDonneesSolde.recupererSoldeAPartirFichier("cptref00002");
+        Solde solde3 = ApiAccesDonneesSolde.recupererSoldeAPartirFichier("reference inconnue");
+
+        assertThat(solde1.getSolde()).isEqualTo((double) 3790.14);
+        assertThat(solde2.getSolde()).isEqualTo((double) -145.32);
+        assertThat(solde3.getSolde()).isEqualTo((double) 0);
+
+//        solde1.afficherInformations();
+//        solde2.afficherInformations();
+//        solde3.afficherInformations();
+
+    }
+
+
 
 }
