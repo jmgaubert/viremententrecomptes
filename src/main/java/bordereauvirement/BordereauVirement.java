@@ -1,6 +1,7 @@
 package bordereauvirement;
 
-import apiaccesdonnees.ApiAccesDonnees;
+import apiaccesdonnees.solde.ApiAccesDonneesSolde;
+import apiaccesdonnees.titulaire.ApiAccesDonneesTitulaire;
 import informationlieecompte.mouvement.Mouvement;
 import informationlieecompte.solde.Solde;
 import informationlieecompte.titulaire.Titulaire;
@@ -47,11 +48,11 @@ public class BordereauVirement {
 
 //        Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00001");
 //        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00002");
-        Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00001");
-        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00002");
+        Titulaire titulaireCompteEmetteur = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00001");
+        Titulaire titulaireCompteRecepteur = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00002");
 
-        Solde soldeCompteEmetteur = ApiAccesDonnees.recupererSolde("cptref00001");
-        Solde soldeCompteRecepteur = ApiAccesDonnees.recupererSolde("cptref00002");
+        Solde soldeCompteEmetteur = ApiAccesDonneesSolde.recupererSoldeBouchonne("cptref00001");
+        Solde soldeCompteRecepteur = ApiAccesDonneesSolde.recupererSoldeBouchonne("cptref00002");
 
         Mouvement mouvementVirementEmetteur = new Mouvement(referenceCompteEmetteur,
                 dateVirement,

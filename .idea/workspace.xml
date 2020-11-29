@@ -22,11 +22,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="integration lecture fichier .txt">
+    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="integration API recherche titulaire sur un fichier .txt">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fichiersoldes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/titulaire/ApiAccesDonneesTitulaire.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/solde/ApiAccesDonneesSoldeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listetitulaires.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/fichiertitulaires.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/ApiAccesDonnees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/solde/ApiAccesDonneesSolde.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/ApiAccesDonneesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/titulaire/ApiAccesDonneesTitulaireTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,55 +64,69 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../java exemples avec correction/tpEpita-corrections/tpEpita-corrections" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\JMG\viremententrecomptes\src" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="apiaccesdonnees.titulaire" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="apiaccesdonnees.solde" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\JMG\viremententrecomptes\src" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.BordereauVirementTest">
-    <configuration name="ApiAccesDonneesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiAccesDonneesSoldeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="viremententrecomptes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiaccesdonnees.*" />
+          <option name="PATTERN" value="apiaccesdonnees.solde.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiaccesdonnees" />
-      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.ApiAccesDonneesTest" />
+      <option name="PACKAGE_NAME" value="apiaccesdonnees.solde" />
+      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.solde.ApiAccesDonneesSoldeTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiAccesDonneesTest.lire_fichier_titulaire" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiAccesDonneesSoldeTest.recupere_solde_associe_au_compte_version_bouchonnee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="viremententrecomptes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiaccesdonnees.*" />
+          <option name="PATTERN" value="apiaccesdonnees.solde.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiaccesdonnees" />
-      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.ApiAccesDonneesTest" />
-      <option name="METHOD_NAME" value="lire_fichier_titulaire" />
+      <option name="PACKAGE_NAME" value="apiaccesdonnees.solde" />
+      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.solde.ApiAccesDonneesSoldeTest" />
+      <option name="METHOD_NAME" value="recupere_solde_associe_au_compte_version_bouchonnee" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiAccesDonneesTest.recuperer_informations_titulaire_dans_un_fichier_texte" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiAccesDonneesTitulaireTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="viremententrecomptes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiaccesdonnees.*" />
+          <option name="PATTERN" value="apiaccesdonnees.titulaire.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiaccesdonnees" />
-      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.ApiAccesDonneesTest" />
-      <option name="METHOD_NAME" value="recuperer_informations_titulaire_dans_un_fichier_texte" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="apiaccesdonnees.titulaire" />
+      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.titulaire.ApiAccesDonneesTitulaireTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,10 +165,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.BordereauVirementTest" />
-        <item itemvalue="JUnit.ApiAccesDonneesTest" />
+        <item itemvalue="JUnit.ApiAccesDonneesTitulaireTest" />
+        <item itemvalue="JUnit.ApiAccesDonneesSoldeTest" />
         <item itemvalue="JUnit.BordereauVirementTest.bordereauDeVirement" />
-        <item itemvalue="JUnit.ApiAccesDonneesTest.recuperer_informations_titulaire_dans_un_fichier_texte" />
-        <item itemvalue="JUnit.ApiAccesDonneesTest.lire_fichier_titulaire" />
+        <item itemvalue="JUnit.ApiAccesDonneesSoldeTest.recupere_solde_associe_au_compte_version_bouchonnee" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606580065084</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="integration API recherche titulaire sur un fichier .txt">
+      <created>1606583662387</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606583662387</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,7 +274,8 @@
     <MESSAGE value="changement classe compte par classe InformationLieeCompte" />
     <MESSAGE value="ajout fichier liste titulaire" />
     <MESSAGE value="integration lecture fichier .txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="integration lecture fichier .txt" />
+    <MESSAGE value="integration API recherche titulaire sur un fichier .txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration API recherche titulaire sur un fichier .txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="94" key="#Project_Structure" timestamp="1606319310317">
@@ -259,10 +286,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606561842686" />
-    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606581912256">
+    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606643457886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1606581912256" />
+    <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1606643457886" />
+    <state x="510" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606642627057">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="510" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606642627057" />
     <state x="226" y="275" key="FileChooserDialogImpl" timestamp="1606494224662">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -271,26 +302,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606486005122" />
-    <state width="1877" height="96" key="GridCell.Tab.0.bottom" timestamp="1606583399240">
+    <state width="1877" height="36" key="GridCell.Tab.0.bottom" timestamp="1606643532026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="96" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
-    <state width="1877" height="96" key="GridCell.Tab.0.center" timestamp="1606583399240">
+    <state width="1877" height="36" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606643532026" />
+    <state width="1877" height="36" key="GridCell.Tab.0.center" timestamp="1606643532026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="96" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
-    <state width="1877" height="96" key="GridCell.Tab.0.left" timestamp="1606583399240">
+    <state width="1877" height="36" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606643532026" />
+    <state width="1877" height="36" key="GridCell.Tab.0.left" timestamp="1606643532026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="96" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
-    <state width="1877" height="96" key="GridCell.Tab.0.right" timestamp="1606583399240">
+    <state width="1877" height="36" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606643532026" />
+    <state width="1877" height="36" key="GridCell.Tab.0.right" timestamp="1606643532026">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="96" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606583399240" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606580072733">
+    <state width="1877" height="36" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606643532026" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606583673256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606580072733" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606583673256" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606485904747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,12 +1,14 @@
-package apiaccesdonnees;
+package apiaccesdonnees.titulaire;
 
+import apiaccesdonnees.solde.ApiAccesDonneesSolde;
+import apiaccesdonnees.titulaire.ApiAccesDonneesTitulaire;
 import informationlieecompte.solde.Solde;
 import informationlieecompte.titulaire.Titulaire;
 import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ApiAccesDonneesTest {
+public class ApiAccesDonneesTitulaireTest {
 
     @BeforeAll
     static void beforeALL() {
@@ -30,7 +32,7 @@ public class ApiAccesDonneesTest {
     @AfterEach
     void timeApres() {
         timeAtEndMethod = System.currentTimeMillis();
-//        System.out.println("ce test a durer " + (timeAtEndMethod - timeAtStartMethod) + " ms");
+        System.out.println("ce test a durer " + (timeAtEndMethod - timeAtStartMethod) + " ms");
     }
 
     //ordonner les soldes
@@ -40,9 +42,9 @@ public class ApiAccesDonneesTest {
     @Order(1)
     public void recupere_titulaire_associe_au_compte_version_bouchonnee() {
 
-        Titulaire titulaire1 = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00001");
-        Titulaire titulaire2 = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00002");
-        Titulaire titulaire3 = ApiAccesDonnees.recupererTitulaireBouchonne("reference inconnue");
+        Titulaire titulaire1 = ApiAccesDonneesTitulaire.recupererTitulaireBouchonne("cptref00001");
+        Titulaire titulaire2 = ApiAccesDonneesTitulaire.recupererTitulaireBouchonne("cptref00002");
+        Titulaire titulaire3 = ApiAccesDonneesTitulaire.recupererTitulaireBouchonne("reference inconnue");
 
         assertThat(titulaire1.getTitulaire()).isEqualTo("Antoine Dupond");
         assertThat(titulaire1.getAdresseMail()).isEqualTo("Antoine.Dupond@gmail.com");
@@ -61,41 +63,21 @@ public class ApiAccesDonneesTest {
     }
 
     @Test
-    @DisplayName("récupération Solde associé au Compte")
-    @Order(2)
-    public void recupere_solde_associe_au_compte() {
-
-        Solde solde1 = ApiAccesDonnees.recupererSolde("cptref00001");
-        Solde solde2 = ApiAccesDonnees.recupererSolde("cptref00002");
-        Solde solde3 = ApiAccesDonnees.recupererSolde("reference inconnue");
-
-        assertThat(solde1.getSolde()).isEqualTo((double) 3790.14);
-        assertThat(solde2.getSolde()).isEqualTo((double) -145.32);
-        assertThat(solde3.getSolde()).isEqualTo((double) 0);
-
-//        System.out.println(solde1);
-//        solde1.afficherInformations();
-//        System.out.println(solde2);
-//        solde2.afficherInformations();
-//        System.out.println(solde3);
-//        solde3.afficherInformations();
-    }
-    @Test
     @DisplayName("lecture fichier titulaire")
-    @Order(3)
+    @Order(2)
     public void lire_fichier_titulaire() {
 
-        ApiAccesDonnees.lireFichierSequentiel();
+        ApiAccesDonneesTitulaire.lireFichierSequentielTitulaire();
     }
 
     @Test
     @DisplayName("récupérer informations titulaire dans un fichier texte")
-    @Order(4)
+    @Order(3)
     public void recuperer_informations_titulaire_dans_un_fichier_texte() {
 
-        Titulaire titulaire1 = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00001");
-        Titulaire titulaire2 = ApiAccesDonnees.recupererTitulaireAPartirFichier("cptref00002");
-        Titulaire titulaire3 = ApiAccesDonnees.recupererTitulaireAPartirFichier("reference inconnue");
+        Titulaire titulaire1 = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00001");
+        Titulaire titulaire2 = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00002");
+        Titulaire titulaire3 = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("reference inconnue");
 
         assertThat(titulaire1.getTitulaire()).isEqualTo("Antoine Dupond");
         assertThat(titulaire1.getAdresseMail()).isEqualTo("Antoine.Dupond@gmail.com");

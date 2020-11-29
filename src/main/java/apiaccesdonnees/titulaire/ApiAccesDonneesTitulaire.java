@@ -1,4 +1,4 @@
-package apiaccesdonnees;
+package apiaccesdonnees.titulaire;
 
 import informationlieecompte.solde.Solde;
 import informationlieecompte.titulaire.Titulaire;
@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class ApiAccesDonnees {
+public class ApiAccesDonneesTitulaire {
     //classe ne possédant pas d'attributs
     //classe ne contenant que des méthodes static de type "utilitaires API" --> appelable sans instanciation de la classe
 
@@ -36,27 +36,8 @@ public class ApiAccesDonnees {
         return new Titulaire(nom, referenceCompte, adresseMail);
     }
 
-    public static Solde recupererSolde(String referenceCompte) {
-
-        double montantSolde;
-
-        switch (referenceCompte) {
-            //bouchonnage donc ...... pas cible du tout
-            case "cptref00001":
-                montantSolde = 3790.14;
-                break;
-            case "cptref00002":
-                montantSolde = -145.32;
-                break;
-            default:
-                montantSolde = 0;
-        }
-        //definir gestion de solde non trouve  implementer le bouchon à partir d'un fichier texte
-        return new Solde(referenceCompte, montantSolde);
-    }
-
-    public static void lireFichierSequentiel() {
-        Path fichier = Paths.get("src/listetitulaires.txt");
+     public static void lireFichierSequentielTitulaire() {
+        Path fichier = Paths.get("src/fichiertitulaires.txt");
         BufferedReader bufferedReader = null;
         boolean fichierExiste = Files.exists(fichier);
 //        if (fichierExiste){
@@ -96,7 +77,7 @@ public class ApiAccesDonnees {
         boolean titulaireNonTrouve = true;
         String[] result = null;
 
-        Path fichier = Paths.get("src/listetitulaires.txt");
+        Path fichier = Paths.get("src/fichiertitulaires.txt");
         BufferedReader bufferedReader = null;
 
         try {
