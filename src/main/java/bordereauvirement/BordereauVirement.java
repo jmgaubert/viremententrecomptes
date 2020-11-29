@@ -2,6 +2,7 @@ package bordereauvirement;
 
 import apiaccesdonnees.solde.ApiAccesDonneesSolde;
 import apiaccesdonnees.titulaire.ApiAccesDonneesTitulaire;
+import apiecrituredonnees.solde.ApiEcritureDonneesSolde;
 import informationlieecompte.mouvement.Mouvement;
 import informationlieecompte.solde.Solde;
 import informationlieecompte.titulaire.Titulaire;
@@ -90,6 +91,9 @@ public class BordereauVirement {
         soldeCompteEmetteur.afficherInformations();
         soldeCompteRecepteur.afficherInformations();
         //print
+
+        ApiEcritureDonneesSolde.EcrireSoldeDansFichier(soldeCompteEmetteur.reference, soldeCompteEmetteur.getSolde());
+        ApiEcritureDonneesSolde.EcrireSoldeDansFichier(soldeCompteRecepteur.reference, soldeCompteRecepteur.getSolde());
 
         informerBeneficiaire(titulaireCompteRecepteur, mouvementVirementRecepteur);
 
