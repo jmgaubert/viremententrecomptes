@@ -49,13 +49,17 @@ public class BordereauVirement {
 
 //        Titulaire titulaireCompteEmetteur = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00001");
 //        Titulaire titulaireCompteRecepteur = ApiAccesDonnees.recupererTitulaireBouchonne("cptref00002");
-        Titulaire titulaireCompteEmetteur = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00001");
-        Titulaire titulaireCompteRecepteur = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00002");
+//        Titulaire titulaireCompteEmetteur = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00001");
+//        Titulaire titulaireCompteRecepteur = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00002");
+        Titulaire titulaireCompteEmetteur = ApiAccesDonneesTitulaire.recupererTitulaire("cptref00001");
+        Titulaire titulaireCompteRecepteur = ApiAccesDonneesTitulaire.recupererTitulaire("cptref00002");
 
 //        Solde soldeCompteEmetteur = ApiAccesDonneesSolde.recupererSoldeBouchonne("cptref00001");
 //        Solde soldeCompteRecepteur = ApiAccesDonneesSolde.recupererSoldeBouchonne("cptref00002");
-        Solde soldeCompteEmetteur = ApiAccesDonneesSolde.recupererSoldeAPartirFichier("cptref00001");
-        Solde soldeCompteRecepteur = ApiAccesDonneesSolde.recupererSoldeAPartirFichier("cptref00002");
+//        Solde soldeCompteEmetteur = ApiAccesDonneesSolde.recupererSoldeAPartirFichier("cptref00001");
+//        Solde soldeCompteRecepteur = ApiAccesDonneesSolde.recupererSoldeAPartirFichier("cptref00002");
+        Solde soldeCompteEmetteur = ApiAccesDonneesSolde.recupererSolde("cptref00001");
+        Solde soldeCompteRecepteur = ApiAccesDonneesSolde.recupererSolde("cptref00002");
 
         Mouvement mouvementVirementEmetteur = new Mouvement(referenceCompteEmetteur,
                 dateVirement,

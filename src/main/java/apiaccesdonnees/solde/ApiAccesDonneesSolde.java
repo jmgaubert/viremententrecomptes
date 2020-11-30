@@ -11,6 +11,11 @@ import java.nio.file.Paths;
 
 public class ApiAccesDonneesSolde {
 
+    public static Solde recupererSolde(String referenceCompte) {
+        //mettre des displays pour vérifier que c'est bien même adresse et pas création d'objet intermédiaire
+         return recupererSoldeAPartirFichier(referenceCompte);
+    }
+
     public static Solde recupererSoldeBouchonne(String referenceCompte) {
 
         double montantSolde;

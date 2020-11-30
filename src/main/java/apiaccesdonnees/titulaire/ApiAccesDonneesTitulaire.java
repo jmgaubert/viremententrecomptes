@@ -13,6 +13,11 @@ public class ApiAccesDonneesTitulaire {
     //classe ne possédant pas d'attributs
     //classe ne contenant que des méthodes static de type "utilitaires API" --> appelable sans instanciation de la classe
 
+    public static Titulaire recupererTitulaire(String referenceCompte) {
+        return recupererTitulaireAPartirFichier(referenceCompte);
+    }
+
+
     public static Titulaire recupererTitulaireBouchonne(String referenceCompte) {
 
         String adresseMail;

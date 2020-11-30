@@ -8,6 +8,7 @@ import org.junit.jupiter.api.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ApiAccesDonneesTitulaireTest {
 
     @BeforeAll
@@ -78,6 +79,28 @@ public class ApiAccesDonneesTitulaireTest {
         Titulaire titulaire1 = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00001");
         Titulaire titulaire2 = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("cptref00002");
         Titulaire titulaire3 = ApiAccesDonneesTitulaire.recupererTitulaireAPartirFichier("reference inconnue");
+
+        assertThat(titulaire1.getTitulaire()).isEqualTo("Antoine Dupond");
+        assertThat(titulaire1.getAdresseMail()).isEqualTo("Antoine.Dupond@gmail.com");
+        assertThat(titulaire2.getTitulaire()).isEqualTo("Valérie Labelle");
+        assertThat(titulaire2.getAdresseMail()).isEqualTo("Valérie.Labelle@gmail.com");
+        assertThat(titulaire3.getTitulaire()).isEqualTo("absence titulaire");
+        assertThat(titulaire3.getAdresseMail()).isEqualTo("absence titulaire");
+
+        titulaire1.afficherInformations();
+        titulaire2.afficherInformations();
+        titulaire3.afficherInformations();
+
+    }
+
+    @Test
+    @DisplayName("récupérer informations titulaire version INTERFACE isolation")
+    @Order(4)
+    public void recuperer_informations_titulaire_version_interface_isolation() {
+
+        Titulaire titulaire1 = ApiAccesDonneesTitulaire.recupererTitulaire("cptref00001");
+        Titulaire titulaire2 = ApiAccesDonneesTitulaire.recupererTitulaire("cptref00002");
+        Titulaire titulaire3 = ApiAccesDonneesTitulaire.recupererTitulaire("reference inconnue");
 
         assertThat(titulaire1.getTitulaire()).isEqualTo("Antoine Dupond");
         assertThat(titulaire1.getAdresseMail()).isEqualTo("Antoine.Dupond@gmail.com");

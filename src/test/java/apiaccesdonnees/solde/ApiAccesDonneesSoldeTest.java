@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class ApiAccesDonneesSoldeTest {
     @BeforeAll
     static void beforeALL() {
@@ -86,6 +87,23 @@ public class ApiAccesDonneesSoldeTest {
 
     }
 
+    @Test
+    @DisplayName("récupérer informations solde version INTERFACE isolation")
+    @Order(4)
+    public void recuperer_informations_solde_version_interface_isolation() {
 
+        Solde solde1 = ApiAccesDonneesSolde.recupererSolde("cptref00001");
+        Solde solde2 = ApiAccesDonneesSolde.recupererSolde("cptref00002");
+        Solde solde3 = ApiAccesDonneesSolde.recupererSolde("reference inconnue");
+
+        assertThat(solde1.getSolde()).isEqualTo((double) 3790.14);
+        assertThat(solde2.getSolde()).isEqualTo((double) -145.32);
+        assertThat(solde3.getSolde()).isEqualTo((double) 0);
+
+//        solde1.afficherInformations();
+//        solde2.afficherInformations();
+//        solde3.afficherInformations();
+
+    }
 
 }
