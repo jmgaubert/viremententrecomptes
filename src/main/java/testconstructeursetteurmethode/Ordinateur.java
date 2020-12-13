@@ -60,6 +60,11 @@ public class Ordinateur {
         return (marque+" "+type+" "+clavier.getMarque()+" "+clavier.getType()+" "+processeur.getMarque()+" "+processeur.getFrequence());
     }
 
+    public void changerClavier(Clavier clavier){
+        this.clavier.setMarque(clavier.getMarque());
+        this.clavier.setType((clavier.getType()));
+
+    }
 
 
 }

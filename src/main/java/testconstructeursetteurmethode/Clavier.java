@@ -27,4 +27,8 @@ public class Clavier {
     public void setType(String type) {
         this.type = type;
     }
+
+    public void setTypeEnrichi(String type) {
+          this.type = type+"plusplus";
+    }
 }

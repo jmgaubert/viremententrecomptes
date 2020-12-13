@@ -22,15 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="integration API type interface isolation pour acces soldes et titulaires">
-      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Clavier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Ordinateur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/OrdinateurTestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/PersonneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/PersonneTestMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Processeur.java" afterDir="false" />
+    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="integration tests divers sur constructeur setter getter adressage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Clavier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Clavier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Ordinateur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Ordinateur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/OrdinateurTestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/OrdinateurTestMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606739685314</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="integration tests divers sur constructeur setter getter adressage">
+      <created>1607866678908</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1607866678908</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,7 +303,8 @@
     <MESSAGE value="activation API rechercher solde via fichier texte dans executer bordereau" />
     <MESSAGE value="activation API ecriture fichier solde mis à jour" />
     <MESSAGE value="integration API type interface isolation pour acces soldes et titulaires" />
-    <option name="LAST_COMMIT_MESSAGE" value="integration API type interface isolation pour acces soldes et titulaires" />
+    <MESSAGE value="integration tests divers sur constructeur setter getter adressage" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration tests divers sur constructeur setter getter adressage" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="94" key="#Project_Structure" timestamp="1606319310317">
@@ -327,42 +331,42 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606486005122" />
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1607866417075">
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1607871645789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417075" />
-    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1607866417069">
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607871645789" />
+    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1607871645789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417069" />
-    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1607866417069">
+    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607871645789" />
+    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1607871645789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417069" />
-    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1607866417069">
+    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607871645789" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1607871645789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417069" />
-    <state width="1334" height="293" key="GridCell.Tab.1.bottom" timestamp="1607863667539">
+    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607871645789" />
+    <state width="1334" height="293" key="GridCell.Tab.1.bottom" timestamp="1607866710518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1334" height="293" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
-    <state width="1334" height="293" key="GridCell.Tab.1.center" timestamp="1607863667539">
+    <state width="1334" height="293" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607866710518" />
+    <state width="1334" height="293" key="GridCell.Tab.1.center" timestamp="1607866710518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1334" height="293" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
-    <state width="1334" height="293" key="GridCell.Tab.1.left" timestamp="1607863667539">
+    <state width="1334" height="293" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607866710518" />
+    <state width="1334" height="293" key="GridCell.Tab.1.left" timestamp="1607866710518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1334" height="293" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
-    <state width="1334" height="293" key="GridCell.Tab.1.right" timestamp="1607863667539">
+    <state width="1334" height="293" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607866710518" />
+    <state width="1334" height="293" key="GridCell.Tab.1.right" timestamp="1607866710518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1334" height="293" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606739693495">
+    <state width="1334" height="293" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607866710518" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607866688040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606739693495" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607866688040" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606485904747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

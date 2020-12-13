@@ -56,7 +56,19 @@ public class OrdinateurTestMain {
         clavier3CopieBis.setType(ordinateur3.getClavier().getType());
         clavier3CopieBis.setMarque(ordinateur3.getClavier().getMarque());
         System.out.println("clavier3CopieBis new+setter: "+clavier3CopieBis);
-        System.out.println("clavier3CopieBis new+setter: "+clavier3CopieBis.getMarque()+" "+clavier3Copie.getType());
+        System.out.println("clavier3CopieBis new+setter: "+clavier3CopieBis.getMarque()+" "+clavier3CopieBis.getType());
+
+        clavier3CopieBis.setTypeEnrichi("trucmuche");
+        System.out.println("clavier3CopieBis setter enrichi: "+clavier3CopieBis);
+        System.out.println("clavier3CopieBis setter enrichi : "+clavier3CopieBis.getMarque()+" "+clavier3CopieBis.getType());
+
+        System.out.println();
+        System.out.println("copie de clavier3CopieBis dans clavier ordinateur1");
+        ordinateur1.changerClavier(clavier3CopieBis);
+        System.out.println("ordinateur1 :"+ordinateur1);
+        System.out.println("clavier     :" + ordinateur1.getClavier());
+        System.out.println("processeur  :" + ordinateur1.getProcesseur());
+        System.out.println("ordinateur 1 apres changement clavier "+ ordinateur1.affichage());
 
     }
 }
