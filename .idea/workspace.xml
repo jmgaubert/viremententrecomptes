@@ -22,14 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="activation API ecriture fichier solde mis à jour">
-      <change afterPath="$PROJECT_DIR$/src/main/java/apiecrituredonnees/mouvement/ApiEcritureDonneesMouvement.java" afterDir="false" />
+    <list default="true" id="f225b08a-c1fe-4710-acf3-c293f9e0a723" name="Default Changelist" comment="integration API type interface isolation pour acces soldes et titulaires">
+      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Clavier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Ordinateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/OrdinateurTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/PersonneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/PersonneTestMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/testconstructeursetteurmethode/Processeur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/solde/ApiAccesDonneesSolde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/solde/ApiAccesDonneesSolde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/titulaire/ApiAccesDonneesTitulaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/apiaccesdonnees/titulaire/ApiAccesDonneesTitulaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bordereauvirement/BordereauVirement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/solde/ApiAccesDonneesSoldeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/solde/ApiAccesDonneesSoldeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/titulaire/ApiAccesDonneesTitulaireTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiaccesdonnees/titulaire/ApiAccesDonneesTitulaireTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bordereauvirement/BordereauVirement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +63,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -81,7 +82,33 @@
       <recent name="C:\JMG\viremententrecomptes\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiAccesDonneesSoldeTest">
+  <component name="RunManager" selected="Application.OrdinateurTestMain">
+    <configuration name="OrdinateurTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testconstructeursetteurmethode.OrdinateurTestMain" />
+      <module name="viremententrecomptes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testconstructeursetteurmethode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonneTestMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testconstructeursetteurmethode.PersonneTestMain" />
+      <module name="viremententrecomptes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testconstructeursetteurmethode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiAccesDonneesSoldeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="viremententrecomptes" />
       <extension name="coverage">
@@ -97,49 +124,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiAccesDonneesSoldeTest.recuperer_informations_solde_version_interface_isolee" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BordereauVirementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="viremententrecomptes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="apiaccesdonnees.solde.*" />
+          <option name="PATTERN" value="bordereauvirementtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="apiaccesdonnees.solde" />
-      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.solde.ApiAccesDonneesSoldeTest" />
-      <option name="METHOD_NAME" value="recuperer_informations_solde_version_interface_isolee" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiAccesDonneesTitulaireTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="viremententrecomptes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiaccesdonnees.titulaire.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiaccesdonnees.titulaire" />
-      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.titulaire.ApiAccesDonneesTitulaireTest" />
+      <option name="PACKAGE_NAME" value="bordereauvirementtest" />
+      <option name="MAIN_CLASS_NAME" value="bordereauvirementtest.BordereauVirementTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiAccesDonneesTitulaireTest.recuperer_informations_titulaire_version_interface_isolation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="viremententrecomptes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiaccesdonnees.titulaire.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiaccesdonnees.titulaire" />
-      <option name="MAIN_CLASS_NAME" value="apiaccesdonnees.titulaire.ApiAccesDonneesTitulaireTest" />
-      <option name="METHOD_NAME" value="recuperer_informations_titulaire_version_interface_isolation" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -162,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ApiAccesDonneesSoldeTest" />
-        <item itemvalue="JUnit.ApiAccesDonneesTitulaireTest" />
-        <item itemvalue="JUnit.ApiAccesDonneesTitulaireTest.recuperer_informations_titulaire_version_interface_isolation" />
-        <item itemvalue="JUnit.ApiAccesDonneesSoldeTest.recuperer_informations_solde_version_interface_isolee" />
+        <item itemvalue="Application.OrdinateurTestMain" />
+        <item itemvalue="JUnit.BordereauVirementTest" />
+        <item itemvalue="Application.PersonneTestMain" />
         <item itemvalue="JUnit.BordereauVirementTest.bordereauDeVirement" />
+        <item itemvalue="JUnit.ApiAccesDonneesSoldeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -270,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606655584914</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="integration API type interface isolation pour acces soldes et titulaires">
+      <created>1606739685314</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606739685314</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,17 +299,18 @@
     <MESSAGE value="réorganisation classes sur API accès aux données" />
     <MESSAGE value="activation API rechercher solde via fichier texte dans executer bordereau" />
     <MESSAGE value="activation API ecriture fichier solde mis à jour" />
-    <option name="LAST_COMMIT_MESSAGE" value="activation API ecriture fichier solde mis à jour" />
+    <MESSAGE value="integration API type interface isolation pour acces soldes et titulaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration API type interface isolation pour acces soldes et titulaires" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="94" key="#Project_Structure" timestamp="1606319310317">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1606319310317" />
-    <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1606653738833">
+    <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1607865341179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606653738833" />
+    <state x="545" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607865341179" />
     <state x="743" y="389" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1606643457886">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -316,34 +319,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="510" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606642627057" />
-    <state x="226" y="275" key="FileChooserDialogImpl" timestamp="1606494224662">
+    <state x="226" y="275" key="FileChooserDialogImpl" timestamp="1607603142329">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="226" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606494224662" />
+    <state x="226" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607603142329" />
     <state x="805" y="418" key="Github.ShareDialog" timestamp="1606486005122">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="805" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606486005122" />
-    <state width="1877" height="47" key="GridCell.Tab.0.bottom" timestamp="1606739396499">
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom" timestamp="1607866417075">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="47" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606739396499" />
-    <state width="1877" height="47" key="GridCell.Tab.0.center" timestamp="1606739396499">
+    <state width="1877" height="2" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417075" />
+    <state width="1877" height="2" key="GridCell.Tab.0.center" timestamp="1607866417069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="47" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606739396499" />
-    <state width="1877" height="47" key="GridCell.Tab.0.left" timestamp="1606739396499">
+    <state width="1877" height="2" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417069" />
+    <state width="1877" height="2" key="GridCell.Tab.0.left" timestamp="1607866417069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="47" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606739396499" />
-    <state width="1877" height="47" key="GridCell.Tab.0.right" timestamp="1606739396499">
+    <state width="1877" height="2" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417069" />
+    <state width="1877" height="2" key="GridCell.Tab.0.right" timestamp="1607866417069">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="47" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606739396499" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606655591494">
+    <state width="1877" height="2" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607866417069" />
+    <state width="1334" height="293" key="GridCell.Tab.1.bottom" timestamp="1607863667539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606655591494" />
+    <state width="1334" height="293" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
+    <state width="1334" height="293" key="GridCell.Tab.1.center" timestamp="1607863667539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1334" height="293" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
+    <state width="1334" height="293" key="GridCell.Tab.1.left" timestamp="1607863667539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1334" height="293" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
+    <state width="1334" height="293" key="GridCell.Tab.1.right" timestamp="1607863667539">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1334" height="293" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607863667539" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606739693495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606739693495" />
     <state x="761" y="426" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606485904747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
